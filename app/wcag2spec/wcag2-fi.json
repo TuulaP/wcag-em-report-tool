@@ -1,0 +1,903 @@
+{
+    "principles": [
+        {
+            "id": "WCAG2:perceivable",
+            "num": "1",
+            "handle": "Havaittava",
+            "text": "Informaatio ja käyttöliittymäkomponentit pitää esittää tavoilla, jotka käyttäjä voi havaita.",
+            "guidelines": [
+                {
+                    "id": "WCAG2:text-equiv",
+                    "num": "1.1",
+                    "handle": "Tekstivastineet",
+                    "text": "Tarjoa tekstivastineet kaikelle ei-tekstuaaliselle sisällölle siten, että sisältö voidaan muuttaa muihin tarvittaviin muotoihin, kuten isokokoiseksi tekstiksi, pistekirjoitukseksi, puheeksi, symboliksi tai yksinkertaisemmaksi kieleksi.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:text-equiv-all",
+                            "num": "1.1.1",
+                            "handle": "Ei-tekstuaalinen sisältö",
+                            "text": "Kaikki käyttäjälle esitettävä ei-tekstuaalinen sisältö on varustettu saman tarpeen täyttävällä tekstivastineella, pois lukien alla luetellut tapaukset.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Kontrollit, syöte",
+                                            "text": "Ei-tekstuaalisella sisällöllä on sen tarkoituksen kuvaava nimi, jos se toimii kontrollina tai vastaanottaa käyttäjän syötettä. (Tutustu ohjeeseen 4.1 saadaksesi lisää vaatimuksia kontrolleille ja käyttäjän syötettä vastaanottavalle sisällölle.)"
+                                        },
+                                        {
+                                            "handle": "Aikasidonnainen media",
+                                            "text": "Jos ei-tekstuaalinen sisältö on aikasidonnaista mediaa, tekstivastineet tarjoavat vähintään kuvailevan tunnistetiedon ei-tekstuaalisesta sisällöstä. (Tutustu ohjeeseen 1.2 saadaksesi lisävaatimuksia medialle.)"
+                                        },
+                                        {
+                                            "handle": "Testi",
+                                            "text": "Jos ei-tekstuaalinen sisältö on testi tai harjoitus, joka ei olisi tekstinä esitettynä pätevä, tarjoavat tekstivastineet vähintään kuvailevan tunnistetiedon ei-tekstuaalisesta sisällöstä."
+                                        },
+                                        {
+                                            "handle": "Aistinvarainen",
+                                            "text": "Jos ei-tekstuaalinen sisältö on ensisijaisesti tarkoitettu aikaansaamaan tietty aistinvarainen kokemus, niin tekstivastineet tarjoavat vähintään kuvailevan tunnistetiedon ei-tekstuaalisesta sisällöstä."
+                                        },
+                                        {
+                                            "handle": "CAPTCHA",
+                                            "text": "Jos ei-tekstuaalisen sisällön tarkoitus on varmistaa, että sisältöä käyttää henkilö eikä tietokone, niin tarjolla on tekstivastineita, jotka tunnistavat ja kuvailevat ei-tekstuaalisen sisällön tarkoituksen. Lisäksi tarjolla on vaihtoehtoisia CAPTCHA-muotoja, jotka ottavat huomioon erilaiset vammat ja rajoitteet käyttäen eri aistinvaraisia havaintoja tukevia esitystapoja."
+                                        },
+                                        {
+                                            "handle": "Koristeet, muotoilu, näkymättömyys",
+                                            "text": "Koristeet, muotoilu, näkymättömyys: Jos ei-tekstuaalinen sisältö on yksinomaan koriste, jos sitä käytetään ainoastaan visuaaliseen muotoiluun tai jos se on käyttäjälle näkymätön, se toteutetaan siten, että avustava teknologia voi jättää sen huomioimatta."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:media-equiv",
+                    "num": "1.2",
+                    "handle": "Aikasidonnainen media",
+                    "text": "Tarjoa vastine aikasidonnaiselle medialle.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:media-equiv-av-only-alt",
+                            "num": "1.2.1",
+                            "handle": "Pelkkä audio tai pelkkä video (tallennettu)",
+                            "text": "Seuraava pätee tallennetulle pelkälle audiomedialle ja tallennetulle pelkälle videomedialle, paitsi kun audio tai video on tekstin mediavastine ja selvästi merkitty sellaiseksi:",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Pelkkä tallennettu audio",
+                                            "text": "Tarjolla on aikasidonnaiselle medialle vastine, joka esittää vastaavan sisällön kuin tallennettu pelkkä audiosisältö."
+                                        },
+                                        {
+                                            "handle": "Pelkkä tallennettu video",
+                                            "text": "Tarjolla on joko vastine aikasidonnaiselle medialle tai audiotiedosto, joka esittää vastaavan informaation kuin tallennettu pelkkä videosisältö."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:media-equiv-captions",
+                            "num": "1.2.2",
+                            "handle": "Tekstitys (tallennettu)",
+                            "text": "Kaikelle synkronoidussa mediassa olevalle tallennetulle audiosisällölle on tarjolla tekstityksiä, paitsi kun media on tekstin mediavastine ja selvästi merkitty sellaiseksi.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:media-equiv-audio-desc",
+                            "num": "1.2.3",
+                            "handle": "Ääniselite tai mediavastine (tallennettu)",
+                            "text": "",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:media-equiv-real-time-captions",
+                            "num": "1.2.4",
+                            "handle": "Tekstitys (suorissa lähetyksissä)",
+                            "text": "Kaikelle synkronoidussa mediassa olevalle suoralle audiosisällölle on tarjolla tekstityksiä.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "WCAG2:media-equiv-audio-desc-only",
+                            "num": "1.2.5",
+                            "handle": "Ääniselite (tallennettu)",
+                            "text": "Kaikelle synkronoidussa mediassa olevalle tallennetulle videosisällölle on tarjolla ääniselite.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "WCAG2:media-equiv-sign",
+                            "num": "1.2.6",
+                            "handle": "Viittomakieli (tallennettu)",
+                            "text": "Kaikelle synkronoidussa mediassa olevalle tallennetulle audiosisällölle on tarjolla viittomakielinen tulkkaus.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "WCAG2:media-equiv-extended-ad",
+                            "num": "1.2.7",
+                            "handle": "Laajennettu ääniselite (tallennettu)",
+                            "text": "Kun tauot etualan äänissä (eli ei-taustaäänissä) ovat riittämättömiä videon tunnelman välittämiseen ääniselitteiden avulla, tarjotaan kaikelle synkronoidussa mediassa olevalle tallennetulle videosisällölle laajennettu ääniselite.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "WCAG2:media-equiv-text-doc",
+                            "num": "1.2.8",
+                            "handle": "Mediavastine (tallennettu)",
+                            "text": "Aikasidonnaisen median vastine on tarjolla kaikelle tallennetulle synkronoidulle medialle ja kaikelle tallennetulle pelkälle videomedialle.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "WCAG2:media-equiv-live-audio-only",
+                            "num": "1.2.9",
+                            "handle": "Pelkkä audio (suorissa lähetyksissä)",
+                            "text": "Tarjolla on vastine aikasidonnaiselle medialle, joka esittää vastaavan informaation kuin suorana lähetettävä pelkkä audiosisältö.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:content-structure-separation",
+                    "num": "1.3",
+                    "handle": "Mukautettava",
+                    "text": "Tuota sisältöä, joka voidaan esittää eri tavoin (esimerkiksi yksinkertaisemman asettelun avulla) informaatiota tai rakennetta menettämättä.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:content-structure-separation-programmatic",
+                            "num": "1.3.1",
+                            "handle": "Informaatio ja suhteet",
+                            "text": "Esitystavassa välittyvät informaatio, rakenne ja suhteet voidaan selvittää ohjelmallisesti tai ne ovat saatavilla tekstinä.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:content-structure-separation-sequence",
+                            "num": "1.3.2",
+                            "handle": "Merkitykseen vaikuttava järjestys",
+                            "text": "Kun sisällön esitysjärjestys vaikuttaa sisällön merkitykseen, oikea lukemisjärjestys voidaan selvittää ohjelmallisesti.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:content-structure-separation-understanding",
+                            "num": "1.3.3",
+                            "handle": "Aistinvaraiset ominaispiirteet",
+                            "text": "Ohjeet sisällön ymmärtämiseksi ja hallitsemiseksi eivät riipu yksinomaan komponenttien aistinvaraisista ominaispiirteistä kuten muoto, koko, visuaalinen sijainti, suunta tai ääni.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus",
+                                    "text": "Tutustuaksesi väriin liittyviin vaatimuksiin, katso ohje 1.4."
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:visual-audio-contrast",
+                    "num": "1.4",
+                    "handle": "Erottuva",
+                    "text": "Helpota käyttäjiä näkemään ja kuulemaan sisältö lisäämällä taustasta erottuva etuala.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:visual-audio-contrast-without-color",
+                            "num": "1.4.1",
+                            "handle": "Värien käyttö",
+                            "text": "Väriä ei käytetä ainoana visuaalisena keinona välittämään informaatiota, esittämään toimintoa, pyytämään vastausta tai korostamaan visuaalista elementtiä.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus",
+                                    "text": "Tämä onnistumiskriteeri käsittelee erityisesti värien havaitsemista. Havaitsemisen muut muodot käsitellään ohjeessa 1.3, mukaan lukien ohjelmallinen pääsy värien ja muiden visuaalisten esitystapojen koodaukseen."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:visual-audio-contrast-dis-audio",
+                            "num": "1.4.2",
+                            "handle": "Audion kontrollointi",
+                            "text": "Jos jokin ääni verkkosivulla soi automaattisesti kauemmin kuin kolme sekuntia, käytettävissä on joko mekanismi äänen keskeyttämiseen tai pysäyttämiseen tai mekanismi äänen voimakkuuden säätämiseen koko järjestelmän äänenvoimakkuuden säädöstä riippumatta.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus",
+                                    "text": "Koska mikä tahansa sisältö, joka ei täytä tätä onnistumiskriteeriä, voi haitata käyttäjän mahdollisuuksia käyttää koko sivua, täytyy kaiken verkkosivun sisällön (riippumatta siitä käytetäänkö sitä täyttämään muita onnistumiskriteereitä vai ei) täyttää tämä onnistumiskriteeri. Katso ohjeidenmukaisuuden vaatimus 5: Häiriöttömyys."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:visual-audio-contrast-contrast",
+                            "num": "1.4.3",
+                            "handle": "Kontrasti (minimi)",
+                            "text": "Tekstin visuaalisella esityksellä ja tekstiä esittävissä kuvissa kontrastisuhde on vähintään 4,5:1, paitsi seuraavissa tapauksissa:",
+                            "level": "AA",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Isokokoinen teksti",
+                                            "text": "Isokokoisella tekstillä ja isokokoista tekstiä esittävissä kuvissa kontrastisuhde on vähintään 3:1;"
+                                        },
+                                        {
+                                            "handle": "Oheissisältö",
+                                            "text": "Tekstillä tai tekstiä esittävillä kuvilla, jotka eivät kuulu toiminnallisiin käyttöliittymäkomponentteihin, jotka ovat yksinomaan koristeita, jotka eivät ole näkyvissä kenellekään tai jotka ovat osa muuta merkittävää visuaalista sisältöä sisältävää kuvaa, ei ole kontrastivaatimuksia."
+                                        },
+                                        {
+                                            "handle": "Logotyypit",
+                                            "text": "Tekstille, joka on osa logoa tai brändin nimeä, ei ole kontrastivaatimusta."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:visual-audio-contrast-scale",
+                            "num": "1.4.4",
+                            "handle": "Tekstin koon muuttaminen",
+                            "text": "Lukuun ottamatta tekstitystä ja tekstiä esittäviä kuvia tekstin kokoa voidaan muuttaa ilman avustavaa teknologiaa aina 200 prosenttiin asti ilman sisällön tai toiminnallisuuden menettämistä.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "WCAG2:visual-audio-contrast-text-presentation",
+                            "num": "1.4.5",
+                            "handle": "Tekstiä esittävät kuvat",
+                            "text": "Jos käytetty teknologia voi tuottaa visuaalisen esityksen, käytetään informaation välittämiseen ennemmin tekstiä kuin tekstiä esittäviä kuvia, paitsi seuraavissa tapauksissa:",
+                            "level": "AA",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Mukautettava",
+                                            "text": "Tekstiä esittävä kuva voidaan visuaalisesti mukauttaa käyttäjän vaatimusten mukaisesti;"
+                                        },
+                                        {
+                                            "handle": "Olennainen",
+                                            "text": "Tietty tekstin esitystapa on olennainen välitettävälle informaatiolle."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus",
+                                    "text": "Logotyypit (teksti, joka on osa logoa tai brändin nimeä) tulkitaan olennaisiksi."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:visual-audio-contrast7",
+                            "num": "1.4.6",
+                            "handle": "Kontrasti (lisätty)",
+                            "text": "Tekstin visuaalisella esityksellä ja tekstiä esittävissä kuvissa kontrastisuhde on vähintään 7:1, paitsi seuraavissa tapauksissa:",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Isokokoinen teksti",
+                                            "text": "Isokokoisella tekstillä ja isokokoista tekstiä esittävissä kuvissa kontrastisuhde on vähintään 4,5:1;"
+                                        },
+                                        {
+                                            "handle": "Oheissisältö",
+                                            "text": "Tekstillä tai tekstiä esittävillä kuvilla, jotka eivät kuulu toiminnallisiin käyttöliittymäkomponenttihin, jotka ovat yksinomaan koristeita, jotka eivät näy kenellekään tai jotka ovat osa muuta merkitsevää visuaalista sisältöä sisältävää kuvaa, ei ole kontrastivaatimuksia."
+                                        },
+                                        {
+                                            "handle": "Logotyypit",
+                                            "text": "Tekstille, joka on osa logoa tai brändin nimeä, ei ole kontrastin minimivaatimusta."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:visual-audio-contrast-noaudio",
+                            "num": "1.4.7",
+                            "handle": "Hiljainen taustaääni tai ei taustaääntä",
+                            "text": "Tallennetulle pelkälle audiosisällölle joka (1) sisältää ensisijaisesti puhetta äänimaiseman edustalla, (2) ei ole auditiivinen CAPTCHA tai audiologo ja joka (3) ei ole vokalisaatio, jonka tarkoitus on ensisijaisesti olla musiikillinen ilmaisu, kuten laulu tai rap, ainakin yksi seuraavista pitää paikkansa:",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Ei taustaa",
+                                            "text": "Audio ei sisällä taustaääniä."
+                                        },
+                                        {
+                                            "handle": "Pois päältä",
+                                            "text": "Taustaäänet voidaan kytkeä pois päältä."
+                                        },
+                                        {
+                                            "handle": "20 dB",
+                                            "text": "Taustaäänet ovat vähintään 20 desibeliä hiljaisempia kuin äänimaiseman etualan puhesisältö, poikkeuksena satunnaiset, yksi tai kaksi sekuntia kestävät äänet. Huomautus: \"Desibelin\" määritelmän mukaan taustaääni, joka täyttää tämän vaatimuksen, on noin neljä kertaa hiljaisempi kuin äänimaiseman etualan puhesisältö."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus",
+                                    "text": "\"Desibelin\" määritelmän mukaan taustaääni, joka täyttää tämän vaatimuksen, on noin neljä kertaa hiljaisempi kuin äänimaiseman etualan puhesisältö."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:visual-audio-contrast-visual-presentation",
+                            "num": "1.4.8",
+                            "handle": "Visuaalinen esitystapa",
+                            "text": "Tekstilohkojen visuaaliselle esitystavalle on saatavilla mekanismi seuraaviin käyttötarkoituksiin:",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "olist",
+                                    "items": [
+                                        {
+                                            "handle": "",
+                                            "text": "Käyttäjä voi valita edustan ja taustan värit."
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Leveys on enintään 80 merkkiä tai kuvaketta (40, jos CJK)"
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Tekstiä ei ole tasattu (tasattu sekä vasempaan että oikeaan marginaaliin)."
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Riviväli on vähintään puolitoista riviä kappaleiden sisällä, ja kappaleiden väli on vähintään 1,5 kertaa suurempi kuin riviväli."
+                                        },
+                                        {
+                                            "handle": "",
+                                            "text": "Tekstin kokoa voidaan muuttaa ilman avustavaa teknologiaa 200 prosenttiin asti tavalla, joka ei vaadi käyttäjää vierittämään tekstiä vaakasuunnassa rivin lukemiseksi kokonäytön ikkunassa."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:visual-audio-contrast-text-images",
+                            "num": "1.4.9",
+                            "handle": "Tekstiä esittävät kuvat (ei poikkeusta)",
+                            "text": "Tekstiä esittäviä kuvia käytetään yksinomaan koristeena, tai silloin, kun tietty tekstin esitystapa on olennainen informaation välittymiseksi.",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus",
+                                    "text": "Logotyypit (teksti, joka on osa logoa tai brändin nimeä) tulkitaan olennaisiksi."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "WCAG2:operable",
+            "num": "2",
+            "handle": "Hallittava",
+            "text": "Käyttöliittymäkomponenttien ja navigoinnin pitää olla hallittavia.",
+            "guidelines": [
+                {
+                    "id": "WCAG2:keyboard-operation",
+                    "num": "2.1",
+                    "handle": "Käytettävissä näppäimistöltä",
+                    "text": "Toteuta kaikki toiminnallisuus siten, että se on käytettävissä näppäimistöltä.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:keyboard-operation-keyboard-operable",
+                            "num": "2.1.1",
+                            "handle": "Näppäimistö",
+                            "text": "Kaikki sisällön toiminnallisuus on hallittavissa näppäimistörajapinnan välityksellä ilman vaatimusta yksittäisten näppäinpainallusten erityisestä ajoittamisesta, paitsi kun alla oleva toiminnallisuus vaatii syötettä, joka riippuu käyttäjän liikkeiden polusta eikä vain päätepisteistä.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus 1",
+                                    "text": "Tämä poikkeus liittyy sovelluksen toimintoon, ei syötetekniikkaan. Esimerkiksi käytettäessä käsinkirjoitettua tekstiä syötteenä, syötetekniikka (käsiala) vaatii polusta riippuvaa syötettä, kun taas sovelluksen toiminnallisuus (tekstin syöttö) ei sitä vaadi."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus 2",
+                                    "text": "Tämä ei kiellä, eikä tämän pitäisi lannistaa käyttämästä näppäimistön lisäksi hiireen perustuvaa syötettä tai muita syötemenetelmiä."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:keyboard-operation-trapping",
+                            "num": "2.1.2",
+                            "handle": "Ei näppäimistöä -ansa",
+                            "text": "Jos näppäimistön fokus voidaan siirtää sivun komponentille näppäimistörajapintaa käyttämällä, niin fokus voidaan siirtää myös pois kyseiseltä komponentilta pelkästään näppäimistörajapintaa käyttämällä. Mikäli tämä vaatii enemmän kuin muuttumattomia nuoli- tai tab-näppäimiä tai muita standardinmukaisia poistumismenetelmiä, käyttäjälle neuvotaan menetelmä fokuksen poissiirtämiseksi.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus",
+                                    "text": "Koska mikä tahansa sisältö, joka ei täytä tätä onnistumiskriteeriä, voi haitata käyttäjän mahdollisuuksia käyttää koko sivua, täytyy kaiken verkkosivun sisällön (riippumatta siitä käytetäänkö sitä täyttämään muita onnistumiskriteereitä vai ei) täyttää tämä onnistumiskriteeri. Katso ohjeidenmukaisuuden vaatimus 5: Häiriöttömyys."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:keyboard-operation-all-funcs",
+                            "num": "2.1.3",
+                            "handle": "Näppäimistö (ei poikkeuksia)",
+                            "text": "Kaikki sisällön toiminnallisuus on suoritettavissa näppäimistörajapinnan välityksellä ilman vaatimusta yksittäisten näppäinpainallusten erityisestä ajoittamisesta.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:time-limits",
+                    "num": "2.2",
+                    "handle": "Tarpeeksi aikaa",
+                    "text": "Anna käyttäjille tarpeeksi aikaa lukea ja käyttää sisältöä.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:time-limits-required-behaviors",
+                            "num": "2.2.1",
+                            "handle": "Säädettävä ajoitus",
+                            "text": "Jokaiselle sisällön asettamalle aikarajalle ainakin yksi seuraavista pitää paikkansa:",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Kytke pois päältä",
+                                            "text": "Käyttäjän sallitaan kytkeä aikaraja pois päältä ennen sen kohtaamista; tai"
+                                        },
+                                        {
+                                            "handle": "Säädä",
+                                            "text": "Käyttäjän sallitaan säätää aikarajaa ennen sen kohtaamista laajalla asteikolla, joka on vähintään kymmenen kertaa oletusasetuksen pituus; tai"
+                                        },
+                                        {
+                                            "handle": "Jatka",
+                                            "text": "Käyttäjää varoitetaan ennen ajan loppumista, annetaan vähintään 20 sekuntia aikaa aikarajan jatkamiseen yksinkertaisen toiminnon avulla (esimerkiksi, \"paina välilyöntiä\") ja käyttäjän sallitaan jatkaa aikarajaa vähintään kymmenen kertaa; tai"
+                                        },
+                                        {
+                                            "handle": "Reaaliaikainen poikkeus",
+                                            "text": "Aikaraja on reaaliaikaisen tapahtuman vaadittu osa (esimerkiksi huutokaupan), ja vaihtoehto aikarajalle ei ole mahdollinen; tai"
+                                        },
+                                        {
+                                            "handle": "Olennainen poikkeus",
+                                            "text": "Aikaraja on olennainen, ja sen laajentaminen kumoaisi toiminnon; tai"
+                                        },
+                                        {
+                                            "handle": "20 tunnin poikkeus",
+                                            "text": "Aikaraja on yli 20 tuntia."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus",
+                                    "text": "Tämä onnistumiskriteeri auttaa varmistamaan, että käyttäjät voivat saattaa tehtävät valmiiksi ilman odottamattomia aikarajasta johtuvia muutoksia sisällössä tai kontekstissa. Tätä onnistumiskriteeriä tulisi tarkastella yhdessä onnistumiskriteerin 3.2.1 kanssa, joka rajoittaa käyttäjän toiminnasta johtuvia sisällön tai kontekstin muutoksia."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:time-limits-pause",
+                            "num": "2.2.2",
+                            "handle": "Keskeytä, pysäytä, piilota",
+                            "text": "Kaikki seuraavat pitävät paikkansa liikkuvalle, vilkkuvalle, vierivälle tai automaattisesti päivittyvälle informaatiolle:",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "ulist",
+                                    "items": [
+                                        {
+                                            "handle": "Liikkuva, vilkkuva, vierivä",
+                                            "text": "Kaikelle liikkuvalle, vilkkuvalle tai vierivälle informaatiolle, joka (1) käynnistyy automaattisesti, (2) kestää yli viisi sekuntia ja (3) esitetään rinnakkain muun sisällön kanssa, on olemassa mekanismi, jonka avulla käyttäjä voi keskeyttää, pysäyttää tai piilottaa sen, paitsi silloin kun liikkuminen, vilkkuminen tai vieriminen on olennainen osa toimintoa; ja"
+                                        },
+                                        {
+                                            "handle": "Automaattisesti päivittyvä",
+                                            "text": "Kaikelle automaattisesti päivittyvälle informaatiolle, joka (1) käynnistyy automaattisesti ja (2) esitetään rinnakkain muun sisällön kanssa, on olemassa mekanismi, jonka avulla käyttäjä voi keskeyttää, pysäyttää tai piilottaa sen tai hallita sen päivitystiheyttä, paitsi silloin kun automaattinen päivittyminen on olennainen osa toimintoa."
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus 1",
+                                    "text": "Tarkista välkkyvään tai välähtelevään sisältöön liittyvät vaatimukset ohjeesta 2.3."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus 2",
+                                    "text": "Koska mikä tahansa sisältö, joka ei täytä tätä onnistumiskriteeriä, voi haitata käyttäjän mahdollisuuksia käyttää koko sivua, täytyy kaiken verkkosivun sisällön (riippumatta siitä käytetäänkö sitä täyttämään muita onnistumiskriteereitä vai ei) täyttää tämä onnistumiskriteeri. Katso ohjeidenmukaisuuden vaatimus 5: Häiriöttömyys."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus 3",
+                                    "text": "Sisältöä, jota ohjelmisto ajoittain päivittää tai jota ohjataan asiakassovellukselle, ei vaadita säilyttämään tai esittämään tauon tai jatkamisen välissä luotua tai vastaanotettua informaatiota, koska tämä saattaisi olla teknisesti mahdotonta ja monessa tilanteessa harhaanjohtavaa."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus 4",
+                                    "text": "Animaatiota, joka esiintyy osana esilatausvaihetta tai vastaavaa, voidaan pitää olennaisena, jos kyseisen vaiheen aikana vuorovaikutusta ei voi tapahtua kenellekään käyttäjistä ja jos toiminnon edistymistä osoittavan animaation poisjättäminen saattaisi hämätä käyttäjiä tai saada heidät ajattelemaan, että sisältö on jämähtänyt tai vioittunut."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:time-limits-no-exceptions",
+                            "num": "2.2.3",
+                            "handle": "Ei ajoitusta",
+                            "text": "Ajoitus ei ole olennainen osa sisällön esittämää tapahtumaa tai toimintoa, lukuun ottamatta ei-interaktiivista synkronoitua mediaa ja reaaliaikaisia tapahtumia.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "WCAG2:time-limits-postponed",
+                            "num": "2.2.4",
+                            "handle": "Keskeytykset",
+                            "text": "Käyttäjä voi lykätä tai estää keskeytykset, lukuunottamatta hätätapauksiin liittyviä keskeytyksiä.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "WCAG2:time-limits-server-timeout",
+                            "num": "2.2.5",
+                            "handle": "Uudelleentunnistautuminen",
+                            "text": "Kun todennettu istunto vanhentuu, käyttäjä voi dataa menettämättä jatkaa toimintoa uudelleentunnistautumisen jälkeen.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:seizure",
+                    "num": "2.3",
+                    "handle": "Sairauskohtaukset",
+                    "text": "Älä suunnittele sisältöä tavalla, jonka tiedetään aiheuttavan sairauskohtauksia.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:seizure-does-not-violate",
+                            "num": "2.3.1",
+                            "handle": "Kolme välähdystä tai alle -raja-arvo",
+                            "text": "Verkkosivut eivät sisällä mitään, joka milloinkaan välähtäisi useammin kuin kolme kertaa sekunnissa, tai välähdys on alle yleisen välähdyksen ja punaisen välähdyksen raja-arvojen.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus",
+                                    "text": "Koska mikä tahansa sisältö, joka ei täytä tätä onnistumiskriteeriä, voi haitata käyttäjän mahdollisuuksia käyttää koko sivua, täytyy kaiken verkkosivun sisällön (riippumatta siitä käytetäänkö sitä täyttämään muita onnistumiskriteereitä vai ei) täyttää tämä onnistumiskriteeri. Katso ohjeidenmukaisuuden vaatimus 5: Häiriöttömyys."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:seizure-three-times",
+                            "num": "2.3.2",
+                            "handle": "Kolme välähdystä",
+                            "text": "Verkkosivut eivät sisällä mitään, joka milloinkaan välähtäisi useammin kuin kolme kertaa sekunnissa.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:navigation-mechanisms",
+                    "num": "2.4",
+                    "handle": "Navigoitava",
+                    "text": "Tarjoa käyttäjille tapoja navigoida, etsiä sisältöä ja määrittää sijaintinsa.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:navigation-mechanisms-skip",
+                            "num": "2.4.1",
+                            "handle": "Ohita lohkot",
+                            "text": "Tarjolla on mekanismi sellaisten sisällön lohkojen ohittamiseen, jotka toistuvat useilla verkkosivuilla.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:navigation-mechanisms-title",
+                            "num": "2.4.2",
+                            "handle": "Sivuotsikot",
+                            "text": "Verkkosivuilla on otsikot, jotka kuvailevat aiheen tai merkityksen.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:navigation-mechanisms-focus-order",
+                            "num": "2.4.3",
+                            "handle": "Fokusjärjestys",
+                            "text": "Jos verkkosivu voidaan navigoida järjestyksessä ja navigointijärjestykset vaikuttavat merkitykseen tai toimintoon, fokusoitavissa olevat komponentit vastaanottavat fokuksen merkityksen ja toimivuuden säilyttävässä järjestyksessä.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:navigation-mechanisms-refs",
+                            "num": "2.4.4",
+                            "handle": "Linkin tarkoitus (kontekstissa)",
+                            "text": "Jokaisen linkin tarkoitus voidaan selvittää yksin linkkitekstistä tai linkkitekstistä yhdessä ohjelmallisesti selvitettävissä olevan linkkikontekstin avulla, paitsi tilanteissa, joissa linkki olisi yleisesti ottaen epäselvä käyttäjille.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:navigation-mechanisms-mult-loc",
+                            "num": "2.4.5",
+                            "handle": "Useita tapoja",
+                            "text": "Käytettävissä on enemmän kuin yksi tapa paikallistaa yksi verkkosivu verkkosivujen joukosta, paitsi silloin kun verkkosivu on prosessin lopputulos tai vaihe.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "WCAG2:navigation-mechanisms-descriptive",
+                            "num": "2.4.6",
+                            "handle": "Otsikot ja nimilaput",
+                            "text": "Otsikot ja nimilaput kuvailevat aiheen tai merkityksen.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "WCAG2:navigation-mechanisms-focus-visible",
+                            "num": "2.4.7",
+                            "handle": "Näkyvä fokus",
+                            "text": "Kaikilla näppäimistöltä käytettävillä käyttöliittymillä on käyttömoodi, jossa näppäimistön fokusindikaattori on näkyvissä.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "WCAG2:navigation-mechanisms-location",
+                            "num": "2.4.8",
+                            "handle": "Sijainti",
+                            "text": "Saatavilla on informaatiota käyttäjän sijainnista verkkosivujen joukossa.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "WCAG2:navigation-mechanisms-link",
+                            "num": "2.4.9",
+                            "handle": "Linkin tarkoitus (vain linkeille)",
+                            "text": "Jokaisen linkin tarkoituksen tunnistamiseen yksinomaan linkkitekstin perusteella on saatavilla mekanismi, paitsi tilanteissa, joissa linkin tarkoitus olisi yleisesti ottaen epäselvä käyttäjille.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "WCAG2:navigation-mechanisms-headings",
+                            "num": "2.4.10",
+                            "handle": "Osioiden otsikot",
+                            "text": "Sisällön organisoimiseen käytetään osioiden otsikoita.",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus 1",
+                                    "text": "Termiä \"otsikko\" käytetään tässä yleisessä mielessä, ja sillä tarkoitetaan otsikkotekstejä ja muita tapoja lisätä otsikoita erityyppiseen sisältöön."
+                                },
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus 2",
+                                    "text": "Tämä onnistumiskriteeri kattaa osiot kirjoitetussa tekstissä, ei käyttöliittymäkomponenteissa. Käyttöliittymäkomponentit käsitellään onnistumiskriteerissä 4.1.2."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "WCAG2:understandable",
+            "num": "3",
+            "handle": "Ymmärrettävä",
+            "text": "Informaation ja käyttöliittymän toiminnan pitää olla ymmärrettävää.",
+            "guidelines": [
+                {
+                    "id": "WCAG2:meaning",
+                    "num": "3.1",
+                    "handle": "Luettava",
+                    "text": "Tee tekstisisällöstä luettavaa ja ymmärrettävää.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:meaning-doc-lang-id",
+                            "num": "3.1.1",
+                            "handle": "Sivun kieli",
+                            "text": "Jokaisen verkkosivun oletusarvoinen luonnollinen kieli voidaan selvittää ohjelmallisesti.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:meaning-other-lang-id",
+                            "num": "3.1.2",
+                            "handle": "Osien kieli",
+                            "text": "Sisällön jokaisen tekstikatkelman tai ilmaisun luonnollinen kieli voidaan selvittää ohjelmallisesti, paitsi seuraavien osalta: erisnimet, tekniset termit, määrittämättömän kielen sanat sekä sanat tai ilmaisut, jotka ovat muuttuneet läheisen tekstiympäristön kielen murteelliseksi osaksi.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "WCAG2:meaning-idioms",
+                            "num": "3.1.3",
+                            "handle": "Epätavalliset sanat",
+                            "text": "Tarjolla on mekanismi tunnistamaan tietyt sanojen tai lauseiden määritelmät, joita käytetään poikkeavalla tai rajoitetulla tavalla, mukaan lukien idiomit ja jargon.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "WCAG2:meaning-located",
+                            "num": "3.1.4",
+                            "handle": "Lyhenteet",
+                            "text": "Tarjolla on mekanismi tunnistamaan lyhenteiden laajennettu muoto tai merkitys.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "WCAG2:meaning-supplements",
+                            "num": "3.1.5",
+                            "handle": "Lukemisen taso",
+                            "text": "Kun teksti edellyttää erisnimien ja otsikoiden poistamisen jälkeen 2. perusasteen opetuksen vaatimukset ylittävää lukutaitoa, tarjolla on täydentävää sisältöä tai versio, joka ei vaadi 2. perusasteen opetuksen tasoa edistyneempää lukutaitoa.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "WCAG2:meaning-pronunciation",
+                            "num": "3.1.6",
+                            "handle": "Ääntäminen",
+                            "text": "Käytettävissä on mekanismi sanojen täsmällisen ääntämistavan tunnistamiseksi silloin, kun sanojen merkitys kontekstissaan ilman ääntämistavan tuntemusta on monitulkintainen.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:consistent-behavior",
+                    "num": "3.2",
+                    "handle": "Ennakoitava",
+                    "text": "Tee verkkosivuista sellaisia, että niiden ilmiasu ja toiminta ovat ennakoitavissa.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:consistent-behavior-receive-focus",
+                            "num": "3.2.1",
+                            "handle": "Fokusointi",
+                            "text": "Kun mikä tahansa komponentti vastaanottaa fokuksen, se ei aiheuta kontekstin muutosta.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:consistent-behavior-unpredictable-change",
+                            "num": "3.2.2",
+                            "handle": "Syöte",
+                            "text": "Minkään käyttöliittymäkomponentin asetuksen muuttaminen ei automaattisesti aiheuta kontekstin muutosta, ellei käyttäjää ole ohjeistettu tällaisesta toiminnosta ennen komponentin käyttöä.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:consistent-behavior-consistent-locations",
+                            "num": "3.2.3",
+                            "handle": "Johdonmukainen navigointi",
+                            "text": "Verkkosivujen joukon useilla verkkosivuilla toistuvat navigointimekanismit esiintyvät aina samassa suhteellisessa järjestyksessä, ellei käyttäjä toisin valitse.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "WCAG2:consistent-behavior-consistent-functionality",
+                            "num": "3.2.4",
+                            "handle": "Johdonmukainen tunnistaminen",
+                            "text": "Komponentit, joilla on sama toiminnallisuus verkkosivujen joukossa, tunnistetaan johdonmukaisesti.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "WCAG2:consistent-behavior-no-extreme-changes-context",
+                            "num": "3.2.5",
+                            "handle": "Muutos pyydettäessä",
+                            "text": "Kontekstin muutokset käynnistyvät ainoastaan käyttäjän pyynnöstä tai tarjolla on mekanismi tämän tyyppisten muutoksien poiskytkemiseksi.",
+                            "level": "AAA"
+                        }
+                    ]
+                },
+                {
+                    "id": "WCAG2:minimize-error",
+                    "num": "3.3",
+                    "handle": "Syötteen avustaminen",
+                    "text": "Auta käyttäjiä välttämään ja korjaamaan virheitä.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:minimize-error-identified",
+                            "num": "3.3.1",
+                            "handle": "Virheen tunnistaminen",
+                            "text": "Jos syötevirhe havaitaan automaattisesti, virheellinen kohta tunnistetaan ja virhe kuvataan käyttäjälle tekstimuotoisena.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:minimize-error-cues",
+                            "num": "3.3.2",
+                            "handle": "Nimilaput tai ohjeet",
+                            "text": "Kun sisältö edellyttää käyttäjän syötettä, tarjolla on nimilappuja tai ohjeita.",
+                            "level": "A"
+                        },
+                        {
+                            "id": "WCAG2:minimize-error-suggestions",
+                            "num": "3.3.3",
+                            "handle": "Virheen korjausehdotus",
+                            "text": "Jos syötevirhe havaitaan automaattisesti ja korjausehdotukset tunnetaan, ehdotukset esitetään käyttäjälle, paitsi jos tämä vaarantaisi tietoturvan tai sisällön merkityksen.",
+                            "level": "AA"
+                        },
+                        {
+                            "id": "WCAG2:minimize-error-reversible",
+                            "num": "3.3.4",
+                            "handle": "Virheiden ennaltaehkäisy (lakiin perustuva, taloudellinen, data)",
+                            "text": "Verkkosivuille, joista seuraa käyttäjälle lakiin perustuvia sitoumuksia tai taloudellisia transaktioita, jotka muokkaavat tai poistavat käyttäjän hallinnoimaa dataa tietovarastossa tai jotka lähettävät käyttäjän testivastauksia, ainakin yksi seuraavista pitää paikkansa:",
+                            "level": "AA",
+                            "details": [
+                                {
+                                    "type": "olist",
+                                    "items": [
+                                        {
+                                            "handle": "Peruttava",
+                                            "text": "Lähetykset ovat peruttavissa."
+                                        },
+                                        {
+                                            "handle": "Tarkastettu",
+                                            "text": "Käyttäjän syöttämä data tarkastetaan syötevirheiden varalta ja käyttäjälle tarjotaan mahdollisuus virheiden korjaamiseen."
+                                        },
+                                        {
+                                            "handle": "Vahvistettu",
+                                            "text": "Käytettävissä on mekanismi informaation tarkistamiseen, vahvistamiseen ja korjaamiseen ennen lähetyksen loppuunsaattamista."
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:minimize-error-context-help",
+                            "num": "3.3.5",
+                            "handle": "Ohjeet",
+                            "text": "Saatavilla on kontekstisensitiivisiä ohjeita.",
+                            "level": "AAA"
+                        },
+                        {
+                            "id": "WCAG2:minimize-error-reversible-all",
+                            "num": "3.3.6",
+                            "handle": ". Virheiden ennaltaehkäisy (kaikki)",
+                            "text": "Verkkosivuille, jotka vaativat käyttäjän lähettämää informaatiota, ainakin yksi seuraavista pitää paikkansa:",
+                            "level": "AAA",
+                            "details": [
+                                {
+                                    "type": "olist",
+                                    "items": [
+                                        {
+                                            "handle": "Peruttava",
+                                            "text": "Lähetykset ovat peruttavissa."
+                                        },
+                                        {
+                                            "handle": "Tarkastettu",
+                                            "text": "Käyttäjän toimittama data tarkastetaan syötevirheiden varalta ja käyttäjälle tarjotaan mahdollisuus virheiden korjaamiseen."
+                                        },
+                                        {
+                                            "handle": "Vahvistettu",
+                                            "text": "Tarjolla on mekanismi tarkistamaan, vahvistamaan ja korjaamaan informaatiota ennen lähetyksen loppuunsaattamista."
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "WCAG2:robust",
+            "num": "4",
+            "handle": "Lujatekoinen",
+            "text": "Sisällön pitää olla riittävän lujatekoinen, jotta se voidaan luotettavasti tulkita laajalla joukolla asiakasohjelmia, mukaan lukien avustavat teknologiat.",
+            "guidelines": [
+                {
+                    "id": "WCAG2:ensure-compat",
+                    "num": "4.1",
+                    "handle": "Yhteensopiva",
+                    "text": "Maksimoi yhteensopivuus nykyisten ja tulevien asiakasohjelmien kanssa, mukaan lukien avustavat teknologiat.",
+                    "successcriteria": [
+                        {
+                            "id": "WCAG2:ensure-compat-parses",
+                            "num": "4.1.1",
+                            "handle": "Jäsentäminen",
+                            "text": "Kun sisältö on toteutettu merkkauskieliä käyttämällä, elementeillä on täydelliset alku- ja lopputagit, elementit on järjestetty sisäkkäin määritystensä mukaan, samaa attribuuttia ei ole annettu elementeille moneen kertaan ja kaikki ID-tyyppiset tunnisteet ovat yksilöllisiä paitsi tilanteissa, joissa määritykset sallivat tämänkaltaiset ominaisuudet.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus",
+                                    "text": "Alku- ja lopputagit, joiden muotoilusta puuttuu jokin kriittinen merkki, kuten päättävä \"suurempi kuin\" -merkki tai sopiva lainausmerkki attribuutin arvosta, eivät ole täydellisiä."
+                                }
+                            ]
+                        },
+                        {
+                            "id": "WCAG2:ensure-compat-rsv",
+                            "num": "4.1.2",
+                            "handle": "Nimi, rooli, arvo",
+                            "text": "Kaikkien käyttöliittymäkomponenttien (mukaan lukien lomake-elementit, linkit ja skriptien tuottamat komponentit) nimi ja rooli voidaan selvittää ohjelmallisesti; tilat, ominaisuudet ja arvot, jotka käyttäjä voi asettaa, voidaan myös asettaa ohjelmallisesti; ja tieto näiden muutoksista on asiakasohjelmien saatavissa, mukaan lukien avustavat teknologiat.",
+                            "level": "A",
+                            "details": [
+                                {
+                                    "type": "note",
+                                    "handle": "Huomautus",
+                                    "text": "Tämä onnistumisen kriteeri on ensisijaisesti tarkoitettu Web-kehittäjille, jotka toteuttavat tai skriptaavat itse käyttöliittymäkomponentteja. Esimerkiksi standardit HTML-elementit täyttävät jo tämän onnistumiskriteerin, kun niitä käytetään spesifikaation mukaisesti."
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

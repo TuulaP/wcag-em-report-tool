@@ -1,6 +1,6 @@
 {
-    "TITLE": "Save Evaluation Report",
-    "INTRO": "Use the link below to save the evaluation report information that you have entered in a JSON data file locally on your computer.",
-    "BTN_DOWNLOAD_DATA_FILE": "Save data file locally to your computer",
-    "TIPS": "You can save partially-complete reports (and notes) and work on them later. You can open them from any web browser and you can transfer the data file to another computer. <br> You can Save periodically as you work to avoid losing data if your web browser closes. You can use Windows shortcut keys Ctrl+S or Mac shortcut keys ⌘S to open the Save dialog (or automatically save it in your downloads folder depending on your web browser settings). <br> When you are done entering your evaluation report information, you can download an HTML file of the completed report from the <a href={{link_report}}>View Report</a> page."
+    "TITLE": "Tallenna Arviointiraportti",
+    "INTRO": "Käytä alla olevaa linkkiä tallettaaksesi raportin jonka olet luonut JSON tiedostoon paikallisesti tietokoneellesi.",
+    "BTN_DOWNLOAD_DATA_FILE": "Tallenna tiedosto paikallisesti koneellesi",
+    "TIPS": "Voit tallettaa osittain valmiin raportin (ja muistiinpanot) ja jatkaa työskentelyä niiden parissa myöhemmin. Voit avata tiedoston missä tahansa verkkoselaimessa ja voit siirtää  tiedoston toiselle tietokoneelle. <br> Voit tallentaa ajoittain työskentelyn aikana jotta voit välttää datan menettämisen jos verkkoselaimesi sulkeutuu. Voit käyttää Windowsin pikanäppäimiä Ctrl+S tai Macissä ⌘S avataksesi Tallenna-dialogin (joka voi tallentaa sen automaattisesti 'Lataukset' kansioon riippuen verkkoselaimesi asetuksista). <br> Kun olet syöttänyt kaiken arviointiraportin tiedot, voit ladata valmiin raportin HTML tiedostona <a href={{link_report}}>Katso raporttia</a>-sivulta."
 }

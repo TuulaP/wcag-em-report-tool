@@ -1,6 +1,6 @@
 {
-    "TITLE": "Verkkosivun Saavutettavuuden Arviointiraportti",
-    "INTRO": "Alla on aikaisemmissa vaiheissa antamiesi tietojen mukainen arviointiraportti. Voit palata aiempiin vaiheisiin ja muuttaa mitä tahansa informaatiota. Voit tallettaa arviointidatan, ja jatkaa sen kanssa työskentelyä myöhemmin. (Tämä on sama kuin 'Tallenna' toiminnallisuus.) <br> Tämä raportti on ajateltu ladattavaksi. Voit ladata Arviointiraportin HTML ja CSS -tiedostot alta. Voit sitten muuttaa raportin sisältöä ja visuaalista ulkomuotoa omien tavoitteiden mukaisesti.",
+    "TITLE": "Verkkosivuston saavutettavuuden arviointiraportti",
+    "INTRO": "Alla on aikaisemmissa vaiheissa antamiesi tietojen mukainen arviointiraportti. Voit palata aiempiin vaiheisiin ja muuttaa mitä tahansa informaatiota. Voit tallettaa arviointidatan, ja jatkaa sen kanssa työskentelyä myöhemmin. (Tämä on sama kuin 'Tallenna' toiminnallisuus.) <br> Tämä raportti on ajateltu ladattavaksi. Voit ladata Arviointiraportin HTML ja CSS -tiedostot alta. Voit sitten muuttaa raportin sisältöä ja visuaalista ulkomuotoa omien tarpeidesi mukaisesti.",
     "DOWNLOAD_REPORT": "Lataa ja räätälöi raporttia",
     "BTN_SAVE_HTML": "Lataa arviointiraportti (HTML)",
     "BTN_SAVE_CSS": "Lataa raportin tyylitiedosto (CSS)",
